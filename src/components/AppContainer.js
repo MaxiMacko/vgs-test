@@ -1,6 +1,6 @@
 import React, { useReducer } from "react";
 import {initialState, reducer, AppContext} from "../storage/reducer";
-import IndexComponent from "../components/IndexComponent";
+import IndexComponent from "./IndexComponent";
 
 const AppContainer = () => {
 	const [state, dispatch] = useReducer(reducer, initialState)

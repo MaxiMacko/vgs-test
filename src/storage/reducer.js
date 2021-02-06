@@ -1,4 +1,5 @@
 import React from 'react'
+import {arrayUpdateHelper} from "../helpers/utils";
 
 export const initialState = {
 	labels: [1,2,3,4,5,6,7,8,9,10],
@@ -47,12 +48,6 @@ export const initialState = {
 			data: []
 		}
 	]
-}
-
-function arrayUpdateHelper(dataArray, item) {
-	dataArray.shift()
-	dataArray.push(item)
-	return [...dataArray]
 }
 
 export const reducer = (state, action) => {
