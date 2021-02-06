@@ -2,7 +2,6 @@ import React from "react";
 import { arrayUpdateHelper } from "../helpers/utils";
 
 export const initialState = {
-  labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
   error: null,
   datasets: [
     {
